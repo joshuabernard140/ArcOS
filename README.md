@@ -46,6 +46,11 @@ Any issues with instructions can likely be solved by using sudo: "sudo" and/or c
 2. Use Makefile in OS directory ("sudo make") (building toolchain may take a few minutes)
 3. Run run_disk.sh ("sudo ./run_disk.sh") (run_floppy.sh works as well but currently has issues with filesystem in kernel)
 
+## Images
+![Bootloader](src/images/bootloader.png)
+![Command Line Interface](src/images/commandLine.png)
+![Demo Desktop](src/images/demoDesktop.png)
+
 ## Sources
 - [Nanobyte](https://www.youtube.com/@nanobyte-dev)
 - [Daedalus Community](https://www.youtube.com/@DaedalusCommunity)
