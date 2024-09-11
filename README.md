@@ -41,10 +41,23 @@ ArcOS is a custom operating system developed from scratch, built for the x86 i68
 - [gdb (for debugging)](https://sourceware.org/gdb/)
 
 ## Instructions
-Any issues with instructions can likely be solved by using sudo: "sudo" and/or chmod: "chmod -R u+rwx,go+rx,go-w OS"
-1. Ensure required packages are installed (in Arch Linux, run: "sudo pacman -Syu qemu nasm mtools dosfstools")
-2. Use Makefile in OS directory ("sudo make") (building toolchain may take a few minutes)
-3. Run run_disk.sh ("sudo ./run_disk.sh") (run_floppy.sh works as well but currently has issues with filesystem in kernel)
+1. Ensure required packages are installed
+'''sh
+#In Arch Linux, run: 
+sudo pacman -Syu qemu nasm mtools dosfstools
+'''
+2. Use Makefile in ArcOS-main directory
+'''sh
+#Building toolchain may take a few minutes
+sudo make
+'''
+3. Run ArcOS
+'''sh
+#run_disk.sh is the most stable
+#run_floppy.sh works as well but currently has issues with filesystem in kernel
+#run_gdb.sh can be used for debugging with gdb
+sudo ./run_disk.sh
+'''
 
 ## Images
 ![Bootloader](src/images/bootloader.png)
